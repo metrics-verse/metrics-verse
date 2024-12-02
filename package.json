@@ -1,0 +1,30 @@
+{
+  "name": "@metrics-verse/metrics-verse",
+  "version": "0.0.1",
+  "description": "A modular toolkit for tracking, analysing, and visualizing software project metrics, from dependencies to UI components.",
+  "type": "module",
+  "main": "index.js",
+  "keywords": [
+    "metrics",
+    "dependency-tracking",
+    "ui-component-metrics",
+    "component-usage",
+    "language-usage",
+    "project-analytics",
+    "analyse github organisation",
+    "cli-tool"
+  ],
+  "author": "Eduardo Aparicio Cardenes",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @design-system-metrics/core && npm run build -w @design-system-metrics/cli"
+  },
+  "packageManager": "yarn@4.5.2"
+}
