@@ -30,7 +30,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           registry-url: https://registry.npmjs.org
-      - run: npm ci
-      - run: npm publish --provenance --access=restricted
+      - run: yarn install --frozen-lockfile
+      - run: yarn publish --provenance --access=restricted
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
