@@ -32,10 +32,13 @@
   },
   "homepage": "https://github.com/EduardoAC/design-system-metrics#readme",
   "devDependencies": {
+    "@metrics-verse/eslint-config": "workspace:*",
     "@rollup/plugin-typescript": "12.1.0",
     "@types/node": "22.5.1",
+    "eslint": "8.x.x",
     "glob": "11.0.0",
     "package-json-type": "1.0.3",
+    "prettier": "^3.4.1",
     "rollup": "4.28.0",
     "rollup-plugin-delete": "^2.1.0",
     "rollup-plugin-dts": "^6.1.1",
