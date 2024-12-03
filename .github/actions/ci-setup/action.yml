@@ -13,7 +13,13 @@ runs:
         node-version-file: ".nvmrc"
         registry-url: https://registry.npmjs.org/
         cache: "yarn"
-
+    # Only run with --immutable if not triggered by changesets
     - name: Install dependencies
-      run: yarn install --immutable # Ensures the lockfile is not modified
       shell: bash # Specify the shell
+      run: |
+        if [[ "${{ github.event_name }}" != "workflow_run" ]]; then
+          yarn install --immutable
+        else
+          echo "Skipping --immutable as it's triggered by changesets release process"
+          yarn install
+        fi
