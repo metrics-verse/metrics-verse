@@ -11,12 +11,12 @@ const __dirname = path.dirname(__filename);
 
 export async function searchFilesForImport(
   directory: string,
-  packageName: string
+  packageName: string,
 ): Promise<FoundImportsData[]> {
   const pattern = path.posix.join(
     directory.replace(/\\/g, "/"),
     "**",
-    "*.{js,ts,tsx}"
+    "*.{js,ts,tsx}",
   ); // Use POSIX-style paths
 
   try {
@@ -42,7 +42,7 @@ export async function searchFilesForImport(
              **/
             const regex = new RegExp(
               `import\\s+(?:\\{([^}]*)}\\s+|\\*\\s+as\\s+(\\w+)\\s+|([^}\\s]+)\\s+)?from\\s+['"\`](${packageName}(\\/[^'"\`]*)?)['"\`]`,
-              "g" // 'g' for global search
+              "g", // 'g' for global search
             );
             let matches: FoundImportsData[] = [];
             let match;
@@ -72,7 +72,7 @@ export async function searchFilesForImport(
               return resolve(null);
             }
           });
-        })
+        }),
       );
     });
     return await Promise.all(promisesProcessed).then((results = []) => {

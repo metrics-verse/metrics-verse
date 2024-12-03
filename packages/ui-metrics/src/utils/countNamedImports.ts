@@ -7,7 +7,7 @@ export interface TotalNamedImports {
 // Helper function to count imports
 const incrementImportCount = (
   importCounts: TotalNamedImports,
-  importName: string
+  importName: string,
 ) => {
   if (importName) {
     importCounts[importName] = (importCounts[importName] || 0) + 1;
@@ -25,7 +25,7 @@ export function countNamedImports(imports: FoundImportsData[]) {
 
     // Increment counts for each named import
     namedImports.forEach((namedImport) =>
-      incrementImportCount(importCounts, namedImport)
+      incrementImportCount(importCounts, namedImport),
     );
   });
 

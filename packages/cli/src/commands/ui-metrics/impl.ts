@@ -8,11 +8,11 @@ interface FooCommandFlags {
 
 export async function usage(
   this: LocalContext,
-  flags: FooCommandFlags
+  flags: FooCommandFlags,
 ): Promise<void> {
   const componentUsage = await getComponentsUsage(
     flags.package,
-    flags.directory ?? "."
+    flags.directory ?? ".",
   );
   console.group("Component usage results:");
   console.log(componentUsage);
