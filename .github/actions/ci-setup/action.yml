@@ -17,8 +17,10 @@ runs:
     - name: Install dependencies
       shell: bash # Specify the shell
       run: |
-        if [[ "${{ github.event_name }}" != "workflow_run" ]]; then
-          yarn install --immutable
+        # If the event is a "workflow_run" (i.e., from changesets), skip --immutable
+        if [[ "${{ github.event_name }}" == "workflow_run" || "${{ github.actor }}" == "github-actions[bot]" ]]; then
+            echo "Skipping --immutable as it's triggered by changesets release process"
+            yarn install
         else
           echo "Skipping --immutable as it's triggered by changesets release process"
           yarn install
