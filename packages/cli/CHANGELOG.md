@@ -1,5 +1,14 @@
 # @metrics-verse/cli
 
+## 0.0.5
+
+### Patch Changes
+
+- abdbf65: Second attempt as the event only trigger on CI
+- Updated dependencies [abdbf65]
+  - @metrics-verse/eslint-config@1.0.3
+  - @metrics-verse/ui-metrics@0.0.5
+
 ## 0.0.4
 
 ### Patch Changes
