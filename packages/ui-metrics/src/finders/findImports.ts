@@ -1,13 +1,8 @@
 import * as fs from "node:fs";
 import path from "node:path";
 import { glob } from "glob";
-import { fileURLToPath } from "node:url";
 import { cleanUpText } from "../utils/cleanUpNameImport";
 import { FoundImportsData } from "../types/importData.types";
-
-// Utility to convert __dirname in ES module context
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 export async function searchFilesForImport(
   directory: string,
@@ -44,7 +39,7 @@ export async function searchFilesForImport(
               `import\\s+(?:\\{([^}]*)}\\s+|\\*\\s+as\\s+(\\w+)\\s+|([^}\\s]+)\\s+)?from\\s+['"\`](${packageName}(\\/[^'"\`]*)?)['"\`]`,
               "g", // 'g' for global search
             );
-            let matches: FoundImportsData[] = [];
+            const matches: FoundImportsData[] = [];
             let match;
             // Considering multiple imports of the same package per file
             while ((match = regex.exec(content)) !== null) {

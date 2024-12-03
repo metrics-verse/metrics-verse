@@ -1,5 +1,4 @@
 import { buildCommand, buildRouteMap } from "@stricli/core";
-import { usage } from "./impl";
 
 export const usageCommand = buildCommand({
   loader: async () => {

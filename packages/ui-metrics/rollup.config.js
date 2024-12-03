@@ -23,9 +23,9 @@ export default defineConfig([
       "fs",
       "path",
       "url",
+      "glob",
       "node:fs",
-      "node:path",
-      "node:url", // Exclude Node.js core modules
+      "node:path", // Exclude Node.js core modules
     ],
   },
   {
