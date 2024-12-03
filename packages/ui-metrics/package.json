@@ -16,6 +16,10 @@
     "access": "public"
   },
   "scripts": {
+    "lint": "yarn eslint . --ext .ts",
+    "types:check": "tsc",
+    "format": "prettier --list-different \"**/*.{ts,tsx,md}\"",
+    "format:fix": "prettier --write \"**/*.{js,ts,tsx,md}\"",
     "build": "rollup -c rollup.config.js"
   },
   "repository": {
@@ -35,7 +39,7 @@
     "@metrics-verse/eslint-config": "workspace:*",
     "@rollup/plugin-typescript": "12.1.0",
     "@types/node": "22.5.1",
-    "eslint": "8.x.x",
+    "eslint": "8.57.0",
     "glob": "11.0.0",
     "package-json-type": "1.0.3",
     "prettier": "^3.4.1",

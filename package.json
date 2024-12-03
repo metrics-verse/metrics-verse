@@ -24,6 +24,10 @@
     "examples/*"
   ],
   "scripts": {
+    "lint": "yarn workspaces foreach --parallel -A run lint",
+    "types:check": "yarn workspaces foreach --parallel -A run types:check",
+    "format": "yarn workspaces foreach --parallel -A run format",
+    "format:fix": "yarn workspaces foreach --parallel -A run format:fix",
     "build": "yarn build:ui-metrics && yarn build:cli",
     "build:cli": "yarn workspace @metrics-verse/cli build",
     "build:ui-metrics": "yarn workspace @metrics-verse/ui-metrics build",
