@@ -1,10 +1,12 @@
-name: install
+name: ci-setup
+description: Setup NodeJS based on .nvmrc and Yarn 2
 
 runs:
   using: composite
   steps:
     - name: Enable Corepack
       run: corepack enable
+      shell: bash # Specify the shell
 
     - uses: actions/setup-node@v4
       with:
@@ -14,3 +16,4 @@ runs:
 
     - name: Install dependencies
       run: yarn install --immutable # Ensures the lockfile is not modified
+      shell: bash # Specify the shell
