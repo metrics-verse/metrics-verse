@@ -1,5 +1,11 @@
 # @metrics-verse/ui-metrics
 
+## 0.0.4
+
+### Patch Changes
+
+- eca5707: Try publishing a new version
+
 ## 0.0.3
 
 ### Patch Changes
