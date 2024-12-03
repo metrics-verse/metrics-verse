@@ -2,13 +2,10 @@ name: CI
 
 on:
   pull_request:
+    branches-ignore:
+      - 'changeset-release/**'
   push:
     branches: [main]
-  workflow_run:
-      workflows:
-        - Changesets
-      types:
-        - completed
 
 permissions:
   contents: read
