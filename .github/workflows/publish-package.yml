@@ -8,6 +8,9 @@ on:
     branches:
       - main # Run workflow for pull requests targeting the main branch
 
+permissions:
+  contents: write # Required to push changes, including tags
+
 jobs:
   release:
     name: Release Packages
@@ -37,13 +40,12 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      - name: Create version bumps
-        id: version
-        run: yarn changeset version
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          version: yarn version-packages
+          publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Publish to npm
-        run: yarn changeset publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
