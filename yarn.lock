@@ -2850,7 +2850,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metrics-verse/cli@npm:^0.0.2, @metrics-verse/cli@workspace:packages/cli":
+"@metrics-verse/cli@npm:^0.0.3, @metrics-verse/cli@workspace:packages/cli":
   version: 0.0.0-use.local
   resolution: "@metrics-verse/cli@workspace:packages/cli"
   dependencies:
@@ -10817,7 +10817,7 @@ __metadata:
     "@babel/helper-builder-react-jsx": "npm:latest"
     "@emotion/react": "npm:latest"
     "@emotion/styled": "npm:latest"
-    "@metrics-verse/cli": "npm:^0.0.2"
+    "@metrics-verse/cli": "npm:^0.0.3"
     "@mui/material": "npm:latest"
     "@testing-library/jest-dom": "npm:latest"
     "@testing-library/react": "npm:latest"
