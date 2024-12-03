@@ -1,5 +1,11 @@
 # @metrics-verse/ui-metrics
 
+## 0.0.5
+
+### Patch Changes
+
+- abdbf65: Second attempt as the event only trigger on CI
+
 ## 0.0.4
 
 ### Patch Changes
