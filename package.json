@@ -16,9 +16,6 @@
   ],
   "author": "Eduardo Aparicio Cardenes",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "workspaces": [
     "packages/*",
     "examples/*"

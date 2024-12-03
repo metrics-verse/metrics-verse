@@ -19,11 +19,6 @@ jobs:
 
       - uses: ./.github/actions/ci-setup
 
-      # Debugging Step to check .npmrc and NPM_TOKEN
-      - name: Debug .npmrc and NPM_TOKEN
-        run: |
-          echo "npm config list"
-
       - name: Build All Packages in Dependency Order
         run: yarn build
 
@@ -36,8 +31,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      # Debugging Step to check .npmrc and NPM_TOKEN
-      - name: Debug .npmrc and NPM_TOKEN
-        run: |
-          echo "npm config list"

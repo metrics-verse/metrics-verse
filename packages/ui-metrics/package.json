@@ -12,10 +12,6 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
   "scripts": {
     "lint": "yarn eslint . --ext .ts",
     "types:check": "tsc",
