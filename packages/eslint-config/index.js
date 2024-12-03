@@ -9,9 +9,6 @@ module.exports = {
     },
   },
   settings: {
-    react: {
-      version: "detect",
-    },
     "import/resolver": {
       node: {
         paths: ["src"],
@@ -28,17 +25,12 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "standard",
     "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
   ],
-  plugins: ["react", "@typescript-eslint", "prettier", "jsx-a11y"],
+  plugins: ["@typescript-eslint", "prettier", "jsx-a11y"],
   ignorePatterns: ["vite-env.d.ts", "node_modules/", "dist/"],
   rules: {
-    "react/react-in-jsx-scope": "off",
-    "react/no-unescaped-entities": "off",
-    "react/prop-types": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "prettier/prettier": "error",
   },
