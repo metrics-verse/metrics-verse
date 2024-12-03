@@ -4,12 +4,13 @@
   "description": "Stricli command line application",
   "license": "MIT",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "files": [
     "dist"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "bin": {
     "__cli_bash_complete": "dist/bash-complete.js",
