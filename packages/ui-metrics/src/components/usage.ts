@@ -9,6 +9,7 @@ export async function getComponentsUsage(
   projectDir: string = "."
 ): Promise<TotalNamedImports> {
   try {
+    console.log(`Scanning your project for referenced imports by ${packageName} within ${projectDir} directory`);
     const imports = await searchFilesForImport(projectDir, packageName);
     const componentsByImport = countNamedImports(imports);
     return componentsByImport;

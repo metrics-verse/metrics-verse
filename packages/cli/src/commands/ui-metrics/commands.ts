@@ -4,7 +4,6 @@ import { usage } from "./impl";
 export const usageCommand = buildCommand({
   loader: async () => {
     const { usage } = await import("./impl");
-    console.log("enter");
     return usage;
   },
   parameters: {

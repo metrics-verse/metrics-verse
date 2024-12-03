@@ -10,5 +10,11 @@ export async function usage(
   this: LocalContext,
   flags: FooCommandFlags
 ): Promise<void> {
-  getComponentsUsage(flags.package, flags.directory ?? ".");
+  const componentUsage = await getComponentsUsage(
+    flags.package,
+    flags.directory ?? "."
+  );
+  console.group("Component usage results:");
+  console.log(componentUsage);
+  console.groupEnd();
 }
