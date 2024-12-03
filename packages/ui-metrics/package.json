@@ -1,6 +1,6 @@
 {
   "name": "@metrics-verse/ui-metrics",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "\u0016Measure design system adoption metrics",
   "author": "Eduardo Aparicio Cardenes",
   "license": "Apache-2.0",
