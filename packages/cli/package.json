@@ -8,6 +8,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "__cli_bash_complete": "dist/bash-complete.js",
     "cli": "dist/cli.js"
@@ -35,6 +38,7 @@
     "minify": true
   },
   "dependencies": {
+    "@metrics-verse/ui-metrics": "workspace:^",
     "@stricli/auto-complete": "^1.1.0",
     "@stricli/core": "^1.1.0"
   },

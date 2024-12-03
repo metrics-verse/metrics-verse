@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A modular toolkit for tracking, analysing, and visualizing software project metrics, from dependencies to UI components.",
   "type": "module",
-  "main": "index.js",
+  "private": true,
   "keywords": [
     "metrics",
     "dependency-tracking",
@@ -24,9 +24,11 @@
     "examples/*"
   ],
   "scripts": {
-    "build": "yarn build:ui-metrics && yarn build:cli",
-    "build:cli": "yarn workspace @metrics-verse/cli build",
-    "build:ui-metrics": "yarn workspace @metrics-verse/ui-metrics build"
+    "build": "yarn workspaces foreach --parallel run build",
+    "publish": "yarn changeset publish"
   },
-  "packageManager": "yarn@4.5.2"
+  "packageManager": "yarn@4.5.2",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.10"
+  }
 }
