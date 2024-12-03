@@ -5,14 +5,13 @@ on:
     branches:
       - main # Run workflow on pushes to the main branch
 
-permissions:
-  contents: write # Required to push changes, including tags
-  pull-requests: write # Allows interacting with PRs
-
 jobs:
   release:
     name: Release Packages
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to push changes, including tags
+      pull-requests: write # Allows interacting with PRs
 
     steps:
       - name: Checkout repository
@@ -32,11 +31,6 @@ jobs:
 
       - name: Build All Packages in Dependency Order
         run: yarn build
-
-      - name: CI git versioning
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
