@@ -1,5 +1,14 @@
 # @metrics-verse/cli
 
+## 0.0.4
+
+### Patch Changes
+
+- eca5707: Try publishing a new version
+- Updated dependencies [eca5707]
+  - @metrics-verse/eslint-config@1.0.2
+  - @metrics-verse/ui-metrics@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes
