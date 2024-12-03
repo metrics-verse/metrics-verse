@@ -1,7 +1,7 @@
 ---
-"@metrics-verse/cli": patch
 "@metrics-verse/eslint-config": patch
 "@metrics-verse/ui-metrics": patch
+"@metrics-verse/cli": patch
 ---
 
-Try publishing a new version
+Second attempt as the event only trigger on CI
