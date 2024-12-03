@@ -20,11 +20,11 @@
     "registry": "https://registry.npmjs.org/"
   },
   "workspaces": [
-    "packages/*",
-    "examples/*"
+    "packages/*"
   ],
   "scripts": {
-    "build": "npm run build -w @design-system-metrics/core && npm run build -w @design-system-metrics/cli"
+    "build:cli": "yarn workspace @metrics-verse/cli build",
+    "build:ui-metrics": "yarn workspace @metrics-verse/ui-metrics build"
   },
   "packageManager": "yarn@4.5.2"
 }

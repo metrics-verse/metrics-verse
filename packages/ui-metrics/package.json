@@ -1,0 +1,36 @@
+{
+  "name": "@metrics-verse/ui-metrics",
+  "version": "0.0.1",
+  "description": "\u0016Measure design system adoption metrics",
+  "author": "Eduardo Aparicio Cardenes",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/EduardoAC/design-system-metrics.git"
+  },
+  "keywords": [
+    "design",
+    "system",
+    "metrics"
+  ],
+  "bugs": {
+    "url": "https://github.com/EduardoAC/design-system-metrics/issues"
+  },
+  "homepage": "https://github.com/EduardoAC/design-system-metrics#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "12.1.0",
+    "@types/node": "22.5.1",
+    "glob": "11.0.0",
+    "package-json-type": "1.0.3",
+    "rollup": "4.28.0",
+    "rollup-plugin-delete": "^2.1.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "2.8.1",
+    "typescript": "5.5.4"
+  }
+}
