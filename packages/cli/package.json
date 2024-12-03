@@ -8,6 +8,10 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "bin": {
     "__cli_bash_complete": "dist/bash-complete.js",
     "cli": "dist/cli.js"

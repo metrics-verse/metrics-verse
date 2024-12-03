@@ -3,7 +3,10 @@
   "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
-  "private": true,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "~7.4.0",
     "@typescript-eslint/parser": "~7.4.0",
