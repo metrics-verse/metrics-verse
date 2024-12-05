@@ -20,8 +20,8 @@ runs:
         # If the event is a "workflow_run" (i.e., from changesets), skip --immutable
         if [[ "${{ github.event_name }}" == "workflow_run" || "${{ github.actor }}" == "github-actions[bot]" ]]; then
             echo "Skipping --immutable as it's triggered by changesets release process"
-            yarn install
+            yarn install --mode update-lockfile
         else
-          echo "Skipping --immutable as it's triggered by changesets release process"
-          yarn install
+          echo "Executing immutable as it trigger by the user"
+          yarn install --immutable
         fi
