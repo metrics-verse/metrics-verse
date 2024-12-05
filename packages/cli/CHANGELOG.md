@@ -1,5 +1,14 @@
 # @metrics-verse/cli
 
+## 0.0.8
+
+### Patch Changes
+
+- e98d5d6: Trigger automation again
+- Updated dependencies [e98d5d6]
+  - @metrics-verse/eslint-config@1.0.6
+  - @metrics-verse/ui-metrics@0.0.8
+
 ## 0.0.7
 
 ### Patch Changes
