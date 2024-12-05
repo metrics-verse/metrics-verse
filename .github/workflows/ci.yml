@@ -8,16 +8,24 @@ on:
       - reopened
   push:
     branches: [main]
-  workflow_run:
-      workflows:
-        - Publish Packages
-      types:
-        - completed
+  workflow_dispatch:
+    inputs:
+      workflow-input-1:
+        description: 'trigger-auto-merge'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
 jobs:
+  triggerBy:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "Hello, world!"
+        echo "trigger-auto-merge is ${{ github.event.inputs.trigger-auto-merge }}"
   typecheck:
     name: Typecheck
     runs-on: ubuntu-latest
