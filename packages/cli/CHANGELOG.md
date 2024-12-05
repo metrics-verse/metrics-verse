@@ -1,5 +1,14 @@
 # @metrics-verse/cli
 
+## 0.0.6
+
+### Patch Changes
+
+- 952d5a8: Trigger release to validate automerge
+- Updated dependencies [952d5a8]
+  - @metrics-verse/eslint-config@1.0.4
+  - @metrics-verse/ui-metrics@0.0.6
+
 ## 0.0.5
 
 ### Patch Changes
