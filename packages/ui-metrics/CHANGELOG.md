@@ -1,5 +1,11 @@
 # @metrics-verse/ui-metrics
 
+## 0.0.8
+
+### Patch Changes
+
+- e98d5d6: Trigger automation again
+
 ## 0.0.7
 
 ### Patch Changes
