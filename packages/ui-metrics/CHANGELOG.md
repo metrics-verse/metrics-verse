@@ -1,5 +1,11 @@
 # @metrics-verse/ui-metrics
 
+## 0.0.6
+
+### Patch Changes
+
+- 952d5a8: Trigger release to validate automerge
+
 ## 0.0.5
 
 ### Patch Changes

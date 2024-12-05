@@ -3,7 +3,7 @@ name: Auto-Merge Changesets PR
 on:
   workflow_run:
     workflows:
-      - Changesets
+      - changesets
     types:
       - completed
 
