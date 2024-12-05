@@ -1,5 +1,11 @@
 # @metrics-verse/ui-metrics
 
+## 0.0.7
+
+### Patch Changes
+
+- 8a16748: Trigger automerge
+
 ## 0.0.6
 
 ### Patch Changes

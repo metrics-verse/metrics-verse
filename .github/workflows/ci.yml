@@ -19,7 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     # Skip for changeset-release branches
-    if: ${{ github.ref != 'refs/heads/changeset-release' && !startsWith(github.ref, 'refs/heads/changeset-release') }}
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/ci-setup
@@ -35,7 +34,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     # Skip for changeset-release branches
-    if: ${{ github.ref != 'refs/heads/changeset-release' && !startsWith(github.ref, 'refs/heads/changeset-release') }}
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/ci-setup
@@ -50,7 +48,6 @@ jobs:
     name: CI OK
     runs-on: ubuntu-latest
     # Skip for changeset-release branches
-    if: always() && ${{ github.ref != 'refs/heads/changeset-release' && !startsWith(github.ref, 'refs/heads/changeset-release') }}
     needs: [typecheck, lint]
     env:
       FAILURE: ${{ contains(join(needs.*.result, ','), 'failure') }}

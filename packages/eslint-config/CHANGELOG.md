@@ -1,5 +1,11 @@
 # @metrics-verse/eslint-config
 
+## 1.0.5
+
+### Patch Changes
+
+- 8a16748: Trigger automerge
+
 ## 1.0.4
 
 ### Patch Changes
