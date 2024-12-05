@@ -4,7 +4,6 @@ on:
   workflow_run:
     workflows:
       - Publish Packages
-    branches: [main]
     types:
       - completed
 
@@ -18,10 +17,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
 
       - name: Auto-Merge Changesets PR
-        uses: peter-evans/merge-pull-request@v2
+        uses: peter-evans/enable-pull-request-automerge@v3
         with:
-          pull-request: ${{ github.event.workflow_run.head_branch }}
+          pull-request-number: ${{ github.event.workflow_run.pull_requests.number }}
           merge-method: squash
           token: ${{ secrets.GITHUB_TOKEN }}
