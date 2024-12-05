@@ -1,0 +1,26 @@
+name: Auto-Merge Changesets PR
+
+on:
+  workflow_run:
+    workflows:
+      - Changesets
+    types:
+      - completed
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Auto-Merge Changesets PR
+        uses: peter-evans/merge-pull-request@v2
+        with:
+          pull-request: ${{ github.event.workflow_run.head_branch }}
+          merge-method: squash
+          token: ${{ secrets.GITHUB_TOKEN }}
