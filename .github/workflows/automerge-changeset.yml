@@ -1,13 +1,11 @@
 name: Auto-Merge Changesets PR
 
 on:
-  workflow_dispatch:
-    inputs:
-      workflow-input-1:
-        description: 'trigger-auto-merge'
-        required: true
-        type: boolean
-        default: false
+  workflow_run:
+    workflows:
+      - Publish Packages
+    types:
+      - completed
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
