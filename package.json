@@ -29,7 +29,7 @@
     "build:cli": "yarn workspace @metrics-verse/cli build",
     "build:ui-metrics": "yarn workspace @metrics-verse/ui-metrics build",
     "version-packages": "changeset version",
-    "release": "changeset publish"
+    "release": "changeset publish && changeset tag"
   },
   "packageManager": "yarn@4.5.2",
   "devDependencies": {
