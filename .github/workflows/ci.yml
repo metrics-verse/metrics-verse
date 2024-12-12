@@ -7,12 +7,6 @@ permissions:
   contents: read
 
 jobs:
-  triggerBy:
-    runs-on: ubuntu-latest
-    steps:
-    - run: |
-        echo "Hello, world!"
-        echo "trigger-auto-merge is ${{ github.event.inputs.trigger-auto-merge }}"
   typecheck:
     name: Typecheck
     runs-on: ubuntu-latest
