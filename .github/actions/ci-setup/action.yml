@@ -20,7 +20,7 @@ runs:
         # If the event is a "workflow_run" (i.e., from changesets), skip --immutable
         if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
             echo "Skipping --immutable as it's triggered by changesets release process"
-            yarn install
+            YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install
         else
           echo "Executing immutable as it trigger by the user"
           yarn install --immutable
