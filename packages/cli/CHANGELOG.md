@@ -1,5 +1,14 @@
 # @metrics-verse/cli
 
+## 0.0.10
+
+### Patch Changes
+
+- 2c83c87: Trigger pipeline
+- Updated dependencies [2c83c87]
+  - @metrics-verse/eslint-config@1.0.8
+  - @metrics-verse/ui-metrics@0.0.10
+
 ## 0.0.9
 
 ### Patch Changes

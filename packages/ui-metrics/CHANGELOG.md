@@ -1,5 +1,11 @@
 # @metrics-verse/ui-metrics
 
+## 0.0.10
+
+### Patch Changes
+
+- 2c83c87: Trigger pipeline
+
 ## 0.0.9
 
 ### Patch Changes
