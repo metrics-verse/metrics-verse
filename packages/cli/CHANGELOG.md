@@ -1,5 +1,14 @@
 # @metrics-verse/cli
 
+## 0.0.11
+
+### Patch Changes
+
+- 5d1f133: Trigger new build
+- Updated dependencies [5d1f133]
+  - @metrics-verse/eslint-config@1.0.9
+  - @metrics-verse/ui-metrics@0.0.11
+
 ## 0.0.10
 
 ### Patch Changes

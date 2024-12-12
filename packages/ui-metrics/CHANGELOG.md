@@ -1,5 +1,11 @@
 # @metrics-verse/ui-metrics
 
+## 0.0.11
+
+### Patch Changes
+
+- 5d1f133: Trigger new build
+
 ## 0.0.10
 
 ### Patch Changes
