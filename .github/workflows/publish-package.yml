@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.DEPLOY_GH_TOKEN }}
 
       - uses: ./.github/actions/ci-setup
 
@@ -26,7 +28,11 @@ jobs:
       - name: Version command
         id: version
         run: |
-          echo ::set-output name=changes::$(yarn version-packages 2>&1 | grep -q 'No unreleased changesets found' && echo 'false' || echo 'true')
+          if yarn version-packages 2>&1 | grep -q 'No unreleased changesets found'; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
 
       # Push the updated package.json, and CHANGESET.md files to github, this will trigger a new build
       # the || echo 'No changes' is to ignore errors from git when trying to commit and there are no changes
