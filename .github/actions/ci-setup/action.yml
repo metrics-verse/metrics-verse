@@ -18,7 +18,7 @@ runs:
       shell: bash # Specify the shell
       run: |
         # If the event is a "workflow_run" (i.e., from changesets), skip --immutable
-        if [[ "${{ github.event_name }}" == "workflow_run" || "${{ github.actor }}" == "github-actions[bot]" ]]; then
+        if [[ "${{ github.actor }}" == "github-actions[bot]" && "${{ github.ref }}" == "refs/heads/main" ]]; then
             echo "Skipping --immutable as it's triggered by changesets release process"
             yarn install --mode update-lockfile
         else
