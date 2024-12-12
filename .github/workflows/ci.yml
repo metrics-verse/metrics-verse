@@ -2,11 +2,6 @@ name: CI
 
 on:
   pull_request:
-  workflow_run:
-    workflows:
-      - Publish Packages
-    types:
-      - completed
 
 permissions:
   contents: read
