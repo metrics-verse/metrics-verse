@@ -1,5 +1,11 @@
 # @metrics-verse/ui-metrics
 
+## 0.0.9
+
+### Patch Changes
+
+- 6eeec94: Trigger auto release without PR
+
 ## 0.0.8
 
 ### Patch Changes

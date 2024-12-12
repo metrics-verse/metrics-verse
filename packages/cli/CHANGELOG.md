@@ -1,5 +1,14 @@
 # @metrics-verse/cli
 
+## 0.0.9
+
+### Patch Changes
+
+- 6eeec94: Trigger auto release without PR
+- Updated dependencies [6eeec94]
+  - @metrics-verse/eslint-config@1.0.7
+  - @metrics-verse/ui-metrics@0.0.9
+
 ## 0.0.8
 
 ### Patch Changes
