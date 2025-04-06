@@ -1,0 +1,30 @@
+{
+  "name": "@metrics-verse/organisation-discovery-metrics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Eduardo Aparicio Cardenes",
+  "license": "Apache-2.0",
+  "description": "Series of tools to extract metrics across GitHub accounts and organisations",
+  "scripts": {
+    "build:clean": "rm -rf ./dist",
+    "compile": "tsc -b ./tsconfig.json",
+    "build": "yarn run build:clean && yarn run compile",
+    "test": "node --import=tsx --import ./test/setup.ts --test './src/**/*.test.*'",
+    "start:base": "node --import=tsx --env-file=.env",
+    "demo:list-user-repositories": "yarn start:base src/demo/listUserRepositories.ts"
+  },
+  "devDependencies": {
+    "@octokit/request": "^9.1.1",
+    "@octokit/rest": "^21.0.0",
+    "@octokit/types": "13.5.0",
+    "@types/node": "22.5.1",
+    "@types/yargs": "17.0.33",
+    "glob": "11.0.0",
+    "msw": "2.7.3",
+    "package-json-type": "1.0.3",
+    "ts-node": "10.9.2",
+    "tsx": "4.19.0",
+    "typescript": "5.5.4",
+    "yargs": "17.7.2"
+  }
+}
