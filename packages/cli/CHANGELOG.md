@@ -1,5 +1,15 @@
 # @metrics-verse/cli
 
+## 0.1.1
+
+### Patch Changes
+
+- c7fb3e6: Upgrade packages using changeset command
+- Updated dependencies [c7fb3e6]
+  - @metrics-verse/eslint-config@1.0.10
+  - @metrics-verse/github-discovery-metrics@1.0.1
+  - @metrics-verse/ui-metrics@0.0.12
+
 ## 0.0.11
 
 ### Patch Changes

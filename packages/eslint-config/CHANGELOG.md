@@ -1,5 +1,11 @@
 # @metrics-verse/eslint-config
 
+## 1.0.10
+
+### Patch Changes
+
+- c7fb3e6: Upgrade packages using changeset command
+
 ## 1.0.9
 
 ### Patch Changes

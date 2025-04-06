@@ -1,5 +1,11 @@
 # @metrics-verse/ui-metrics
 
+## 0.0.12
+
+### Patch Changes
+
+- c7fb3e6: Upgrade packages using changeset command
+
 ## 0.0.11
 
 ### Patch Changes
