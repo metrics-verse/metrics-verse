@@ -23,7 +23,8 @@
     "build": "rollup -c rollup.config.js",
     "test": "node --import=tsx --import ./test/setup.ts --test './src/**/*.test.*'",
     "start:base": "node --import=tsx --env-file=.env",
-    "demo:list-user-repositories": "yarn start:base src/demo/listUserRepositories.ts"
+    "demo:list-user-repositories": "yarn start:base src/demo/listUserRepositories.ts",
+    "demo:list-org-repositories": "yarn start:base src/demo/listOrgRepositories.ts"
   },
   "devDependencies": {
     "@metrics-verse/eslint-config": "workspace:*",

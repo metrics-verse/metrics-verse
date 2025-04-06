@@ -1,15 +1,10 @@
 import { github } from "../github";
 
-github.user
-  .listRepositories()
+github.orgs
+  .listRepositories("metrics-verse")
   .then(async (repos) => {
     console.group("List repositories available");
-    console.table(
-      repos.sort((a: { name: string }, b: { name: string }) =>
-        a.name.localeCompare(b.name),
-      ),
-      ["name", "updated_at"],
-    );
+    console.table(repos, ["name", "updated_at"]);
     console.groupEnd();
   })
   .catch((error) => {

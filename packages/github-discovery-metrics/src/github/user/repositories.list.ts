@@ -1,5 +1,5 @@
-import { octokitService } from "../services/octokit.service";
-import { GitHubRepositories } from "../services/types";
+import { octokitService } from "../../services/octokit.service";
+import { GitHubRepositories } from "../../services/types";
 
 export async function listRepositories() {
   let page = 1;
