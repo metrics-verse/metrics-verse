@@ -1,5 +1,16 @@
 # @metrics-verse/cli
 
+## 0.2.0
+
+### Minor Changes
+
+- 8e9499a: Rename exported interface
+
+### Patch Changes
+
+- Updated dependencies [8e9499a]
+  - @metrics-verse/github-discovery-metrics@1.1.0
+
 ## 0.1.1
 
 ### Patch Changes

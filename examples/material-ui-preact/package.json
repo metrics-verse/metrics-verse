@@ -34,7 +34,7 @@
     ]
   },
   "devDependencies": {
-    "@metrics-verse/cli": "^0.1.1",
+    "@metrics-verse/cli": "^0.2.0",
     "customize-cra": "latest",
     "react-app-rewired": "latest"
   }
