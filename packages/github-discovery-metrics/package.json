@@ -1,5 +1,5 @@
 {
-  "name": "@metrics-verse/organisation-discovery-metrics",
+  "name": "@metrics-verse/github-discovery-metrics",
   "version": "1.0.0",
   "author": "Eduardo Aparicio Cardenes",
   "description": "Series of tools to extract metrics across GitHub accounts and organisations",
