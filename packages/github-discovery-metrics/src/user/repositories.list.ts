@@ -9,7 +9,7 @@ export async function listRepositories() {
     const response = await octokitService.repos.listForAuthenticatedUser({
       visibility: "all",
       per_page: 100,
-      page: page,
+      page,
     });
 
     const repos = response.data;
