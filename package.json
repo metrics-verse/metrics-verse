@@ -30,7 +30,8 @@
     "build:ui-metrics": "yarn workspace @metrics-verse/ui-metrics build",
     "build:github-discovery-metrics": "yarn workspace @metrics-verse/github-discovery-metrics build",
     "version-packages": "changeset version",
-    "release": "changeset publish && changeset tag"
+    "release": "changeset publish && changeset tag",
+    "new-release": "changeset"
   },
   "packageManager": "yarn@4.5.2",
   "devDependencies": {
