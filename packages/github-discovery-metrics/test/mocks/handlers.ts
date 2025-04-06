@@ -1,5 +1,3 @@
-import { octokitHanders } from './octokit.handlers';
+import { octokitHanders } from "./octokit.handlers";
 
-export const handlers = [
-  ...octokitHanders
-];
+export const handlers = [...octokitHanders];
