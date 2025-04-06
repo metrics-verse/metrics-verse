@@ -24,7 +24,8 @@
     "test": "node --import=tsx --import ./test/setup.ts --test './src/**/*.test.*'",
     "start:base": "node --import=tsx --env-file=.env",
     "demo:list-user-repositories": "yarn start:base src/demo/listUserRepositories.ts",
-    "demo:list-org-repositories": "yarn start:base src/demo/listOrgRepositories.ts"
+    "demo:list-org-repositories": "yarn start:base src/demo/listOrgRepositories.ts",
+    "demo:list-user-js-and-ts-repositories": "yarn start:base src/demo/listRepositoriesByLanguage.ts"
   },
   "devDependencies": {
     "@metrics-verse/eslint-config": "workspace:*",

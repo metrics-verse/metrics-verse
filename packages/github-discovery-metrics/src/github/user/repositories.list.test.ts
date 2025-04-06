@@ -1,4 +1,3 @@
-// File: test/github.int.test.ts
 import { listRepositories } from "./repositories.list";
 import { test } from "node:test";
 import assert from "node:assert";
