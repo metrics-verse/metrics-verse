@@ -1,13 +1,10 @@
-import { github } from "../github"
+import { github } from "../github";
 
 github.orgs
   .listRepositories("metrics-verse")
   .then(async (repos) => {
     console.group("List repositories available");
-    console.table(
-      repos,
-      ["name", "updated_at"],
-    );
+    console.table(repos, ["name", "updated_at"]);
     console.groupEnd();
   })
   .catch((error) => {

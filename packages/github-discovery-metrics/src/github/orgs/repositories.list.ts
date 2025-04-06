@@ -2,7 +2,7 @@ import { octokitService } from "../services/octokit.service";
 import { GitHubOrgRepositories } from "../services/types";
 
 export async function listRepositories(
-  orgName: string
+  orgName: string,
 ): Promise<GitHubOrgRepositories> {
   let page = 1;
   let orgRepos: GitHubOrgRepositories = [];
