@@ -1,4 +1,4 @@
-import { user } from "@metrics-verse/organisation-discovery-metrics";
+import { user } from "@metrics-verse/github-discovery-metrics";
 import type { LocalContext } from "../../context";
 
 export async function listUserRepositories(this: LocalContext): Promise<void> {
