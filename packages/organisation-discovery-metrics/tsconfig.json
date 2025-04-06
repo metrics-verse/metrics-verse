@@ -1,4 +1,8 @@
 {
   "extends": "../../tsconfig.base.json",
-  "compilerOptions": {}
+  "compilerOptions": {
+    "declaration": true, // Generate declaration files
+    "outDir": "dist/types", // Ensure declarations go to the correct folder
+    "rootDir": "src" // Specify root for TypeScript files
+  }
 }
