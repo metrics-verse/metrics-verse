@@ -25,9 +25,10 @@
     "types:check": "yarn workspaces foreach --parallel -A run types:check",
     "format": "yarn workspaces foreach --parallel -A run format",
     "format:fix": "yarn workspaces foreach --parallel -A run format:fix",
-    "build": "yarn build:ui-metrics && yarn build:cli",
+    "build": "yarn build:ui-metrics && yarn build:cli && yarn build:github-discovery-metrics",
     "build:cli": "yarn workspace @metrics-verse/cli build",
     "build:ui-metrics": "yarn workspace @metrics-verse/ui-metrics build",
+    "build:github-discovery-metrics": "yarn workspace @metrics-verse/github-discovery-metrics build",
     "version-packages": "changeset version",
     "release": "changeset publish && changeset tag"
   },
