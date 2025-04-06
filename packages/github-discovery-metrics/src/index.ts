@@ -1,2 +1,2 @@
-export { user } from "./user";
+export { github } from "./github";
 export type * from "./services/types";

@@ -1,6 +1,6 @@
-import { org } from "../org";
+import { github } from "../github"
 
-org
+github.orgs
   .listRepositories("metrics-verse")
   .then(async (repos) => {
     console.group("List repositories available");
