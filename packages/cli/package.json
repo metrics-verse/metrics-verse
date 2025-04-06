@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@metrics-verse/eslint-config": "workspace:*",
-    "@metrics-verse/organisation-discovery-metrics": "workspace:^",
+    "@metrics-verse/github-discovery-metrics": "workspace:^",
     "@metrics-verse/ui-metrics": "workspace:^",
     "@stricli/auto-complete": "^1.1.0",
     "@stricli/core": "^1.1.0"
