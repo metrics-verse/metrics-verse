@@ -1,7 +1,10 @@
-// mocks/handlers/index.js
-import { handlers as userHandlers } from "./user";
+import { orgsHandlers } from "./org";
+import { userHandlers } from "./user";
 
 // The root-level request handlers combine
 // all the domain-based handlers into a single
 // network description array.
-export const octokitHanders = [...userHandlers];
+export const octokitHanders = [
+  ...userHandlers,
+  ...orgsHandlers,
+];

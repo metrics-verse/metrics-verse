@@ -1,10 +1,31 @@
-export const repository = {
+import { GitHubRepositories } from "../../../../src";
+
+export const userRepositories: GitHubRepositories = [{
   id: 49707964,
   node_id: "MDEwOlJlcG9zaXRvcnk0OTcwNzk2NA==",
   name: "angularjs-blog",
   full_name: "EduardoAC/angularjs-blog",
   private: false,
-  owner: {},
+  owner: {
+    login: "",
+    id: 0,
+    node_id: "",
+    avatar_url: "",
+    gravatar_id: null,
+    url: "",
+    html_url: "",
+    followers_url: "",
+    following_url: "",
+    gists_url: "",
+    starred_url: "",
+    subscriptions_url: "",
+    organizations_url: "",
+    repos_url: "",
+    events_url: "",
+    received_events_url: "",
+    type: "",
+    site_admin: false
+  },
   html_url: "https://github.com/EduardoAC/angularjs-blog",
   description: null,
   fork: false,
@@ -108,5 +129,9 @@ export const repository = {
   open_issues: 0,
   watchers: 0,
   default_branch: "master",
-  permissions: {},
-};
+  permissions: {
+    admin: false,
+    pull: false,
+    push: false
+  },
+}];
