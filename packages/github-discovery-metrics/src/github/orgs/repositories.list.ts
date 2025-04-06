@@ -1,5 +1,5 @@
-import { octokitService } from "../services/octokit.service";
-import { GitHubOrgRepositories } from "../services/types";
+import { octokitService } from "../../services/octokit.service";
+import { GitHubOrgRepositories } from "../../services/types";
 
 export async function listRepositories(
   orgName: string,
@@ -12,7 +12,7 @@ export async function listRepositories(
       org: orgName,
       type: "all",
       per_page: 100,
-      page: page,
+      page,
     });
 
     const repos: GitHubOrgRepositories = response.data;

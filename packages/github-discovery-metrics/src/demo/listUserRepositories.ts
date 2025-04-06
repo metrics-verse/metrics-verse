@@ -1,6 +1,6 @@
-import { user } from "../github/user";
+import { github } from "../github";
 
-user
+github.user
   .listRepositories()
   .then(async (repos) => {
     console.group("List repositories available");
