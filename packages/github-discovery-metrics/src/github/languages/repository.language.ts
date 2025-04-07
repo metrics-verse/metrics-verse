@@ -1,4 +1,4 @@
-import { GitHubRepositories, GitHubOrgRepositories, GitHubRepositoriesLanguages } from "../../../dist";
+import { GitHubRepositories, GitHubOrgRepositories, GitHubRepositoriesLanguages } from "../../services/types";
 import { octokitService } from "../../services/octokit.service";
 
 export interface ListOfRepositoriesByLanguage {
